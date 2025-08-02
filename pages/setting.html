@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/components/main.js" defer></script>
+    <title>Setting</title>
+  </head>
+  <body>
+    <div class="w-screen h-screen flex justify-center items-center flex-col">
+      <p class="text-6xl">Sound Setting</p>
+      <div class="flex gap-4 p-4">
+        <base-button
+          class="inline-block"
+          label="ON"
+          variant="primary"
+        ></base-button>
+        <base-button
+          class="inline-block"
+          label="OFF"
+          variant="primary"
+        ></base-button>
+      </div>
+    </div>
+    <audio autoplay loop hidden>
+      <source src="/src/assets/audio/org-audio.wav" />
+    </audio>
+  </body>
+</html>

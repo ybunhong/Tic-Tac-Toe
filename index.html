@@ -2,18 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/src/components/main.js" defer></script>
-    <title>Vite App</title>
+    <title>Tic Tac Toe</title>
   </head>
   <body>
     <div>
-      <h1 class="text-red-500 font-bold flex justify-center m-24 text-4xl">
-        hello
-      </h1>
-      <base-button label="hello" variant="secondary"></base-button>
-      <base-button label="Submit" variant="primary"></base-button>
+      <img
+        src="/src/assets/wallpaperflare.com_wallpaper (2).jpg"
+        class="absolute z-0 h-screen w-screen"
+      />
+      <div
+        class="flex flex-col w-full h-screen justify-center items-center gap-5 z-10"
+      >
+        <div class="w-2xs z-10">
+          <base-button label="Name: " variant="primary"></base-button>
+        </div>
+        <div class="w-2xs z-10">
+          <base-button
+            label="Start"
+            variant="primary"
+            href="./pages/start-game.html"
+          ></base-button>
+        </div>
+        <div class="w-2xs z-10">
+          <base-button
+            label="Setting"
+            variant="primary"
+            href="./pages/setting.html"
+          ></base-button>
+        </div>
+      </div>
     </div>
+    <audio autoplay loop hidden>
+      <source src="/src/assets/audio/org-audio.wav" />
+    </audio>
   </body>
 </html>
