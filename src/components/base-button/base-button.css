@@ -1,0 +1,31 @@
+.button {
+  /* Component-specific styles that utilities can't handle */
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.button-primary {
+  background-color: var(--color-black);
+  color: white;
+  border: none;
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #ccc;
+}
+
+.button-tertiary {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.button-ghost {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
