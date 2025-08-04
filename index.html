@@ -1,13 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <script type="module" src="/src/components/main.js" defer></script>
+    <title>Tic Tac Toe</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div>
+      <img
+        src="/src/assets/wallpaperflare.com_wallpaper (2).jpg"
+        class="absolute z-0 h-screen w-screen"
+      />
+      <div
+        class="flex flex-col w-full h-screen justify-center items-center gap-5 z-10"
+      >
+        <div class="w-2xs z-10">
+          <name-input></name-input>
+        </div>
+        <div class="w-2xs z-10">
+          <base-button
+            label="Start"
+            variant="primary"
+            href="./pages/start-game.html"
+          ></base-button>
+        </div>
+      </div>
+    </div>
+    <name-input></name-input>
   </body>
 </html>
