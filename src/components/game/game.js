@@ -1,5 +1,6 @@
 import { BaseComponent } from "../base-component.js";
 import "../main.js";
+import chevorn from "../../assets/icons/chevron.svg";
 
 export class StartGame extends BaseComponent {
   static get observedAttributes() {
@@ -99,7 +100,7 @@ export class StartGame extends BaseComponent {
     <div class="flex justify-between w-full">
           <div class="relative w-fit " style="transform: rotate(180deg)">
           <icon-button
-          icon="/src/assets/icons/chevron.svg"
+          icon="${chevorn}"
           href="/index.html"
           size="2.5"
           ></icon-button>
