@@ -4,3 +4,4 @@ import "../style/style.css";
 import "./base-button/base-button";
 import "./game/game";
 import "./icon-button/icon-button";
+import "./name-input/name-input";

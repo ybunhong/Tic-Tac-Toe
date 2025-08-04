@@ -16,7 +16,7 @@
         class="flex flex-col w-full h-screen justify-center items-center gap-5 z-10"
       >
         <div class="w-2xs z-10">
-          <base-button label="Name: " variant="primary"></base-button>
+          <name-input></name-input>
         </div>
         <div class="w-2xs z-10">
           <base-button
@@ -25,17 +25,8 @@
             href="./pages/start-game.html"
           ></base-button>
         </div>
-        <div class="w-2xs z-10">
-          <base-button
-            label="Setting"
-            variant="primary"
-            href="./pages/setting.html"
-          ></base-button>
-        </div>
       </div>
     </div>
-    <audio autoplay loop hidden>
-      <source src="/src/assets/audio/org-audio.wav" />
-    </audio>
+    <name-input></name-input>
   </body>
 </html>
